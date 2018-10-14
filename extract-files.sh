@@ -70,4 +70,10 @@ if [ "$DEVICE" = "mido" ]; then
     sed -i "s|/system/etc/camera/|/vendor/etc/camera/|g" "$CAMERA2_SENSOR_MODULES"
 fi
 
+if [ "$DEVICE" = "tiffany" ]; then
+    # Hax for cam configs
+    sed -i "s|/system/etc/camera/|/vendor/etc/camera/|g" $DEVICE_BLOB_ROOT/vendor/lib/libmmcamera2_sensor_modules.so
+
+fi
+
 "$MY_DIR"/setup-makefiles.sh
