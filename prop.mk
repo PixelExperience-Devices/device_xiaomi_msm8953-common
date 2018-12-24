@@ -113,6 +113,7 @@ ro.gps.agps_provider=1
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
 av.debug.disable.pers.cache=1 \
+debug.sf.enable_hwc_vds=1 \
 media.aac_51_output_enabled=true \
 media.msm8956hw=0 \
 media.stagefright.audio.sink=280 \
@@ -125,6 +126,9 @@ vendor.vidc.dec.downscalar_width=1920 \
 vendor.vidc.disable.split.mode=1 \
 vendor.vidc.enc.disable.pq=true \
 vendor.vidc.enc.disable_bframes=1 \
+vendor.video.disable.ubwc=1
+vendor.display.enable_default_color_mode=1 \
+vendor.gralloc.enable_fb_ubwc=1 \
 vendor.video.disable.ubwc=1
 
 # Memory optimizations
