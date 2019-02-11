@@ -79,6 +79,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     XiaomiParts
 
+# Dex
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    SystemUI
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@4.0-impl \
