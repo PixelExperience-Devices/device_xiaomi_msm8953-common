@@ -215,6 +215,7 @@ persist.data.iwlan=1 \
 persist.data.iwlan.ipsec.ap=1 \
 persist.dbg.wfc_avail_ovr=1 \
 persist.vendor.radio.apm_sim_not_pwdn=1 \
+persist.radio.aosp_usr_pref_sel=true \
 persist.radio.multisim.config=dsds \
 persist.vendor.radio.custom_ecc=1 \
 persist.vendor.radio.jbims=1 \
