@@ -65,7 +65,7 @@ vidc.enc.dcvs.extra-buff-count=2
 
 # Cne/Dpm
 PRODUCT_PROPERTY_OVERRIDES += \
-persist.cne.feature=1 \
+persist.vendor.cne.feature=1 \
 persist.dpm.feature=1
 
 # Coresight
@@ -141,7 +141,7 @@ vendor.video.disable.ubwc=1
 
 # Memory optimizations
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.qti.sys.fw.bservice_enable=true
+ro.vendor.qti.sys.fw.bservice_enable=true
 
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -173,20 +173,11 @@ vendor.display.enable_default_color_mode=1
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
 DEVICE_PROVISIONED=1 \
-persist.data.iwlan.enable=true \
-persist.dbg.ims_volte_enable=1 \
 persist.dbg.volte_avail_ovr=1 \
 persist.dbg.vt_avail_ovr=1 \
-persist.dbg.wfc_avail_ovr=0 \
+persist.dbg.wfc_avail_ovr=1 \
 persist.vendor.radio.apm_sim_not_pwdn=1 \
-persist.radio.calls.on.ims=0 \
-persist.radio.csvt.enabled=false \
-persist.radio.hw_mbn_update=0 \
-persist.radio.jbims=1 \
-persist.radio.mt_sms_ack=20 \
 persist.radio.multisim.config=dsds \
-persist.radio.sw_mbn_update=0 \
-persist.radio.videopause.mode=1 \
 persist.vendor.radio.custom_ecc=1 \
 persist.vendor.radio.jbims=1 \
 persist.vendor.radio.rat_on=combine \
@@ -196,8 +187,7 @@ rild.libargs=-d/dev/smd0 \
 rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
 ro.telephony.call_ring.multiple=false \
 ro.telephony.default_network=22,20 \
-service.qti.ims.enabled=1 \
-telephony.lteOnCdmaDevice=1
+service.qti.ims.enabled=1
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -214,7 +204,7 @@ sys.use_fifo_ui=1
 
 # Usb
 PRODUCT_PROPERTY_OVERRIDES += \
-persist.sys.usb.config.extra=none
+persist.vendor.sys.usb.config.extra=none
 
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
