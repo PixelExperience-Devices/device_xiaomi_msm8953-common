@@ -191,6 +191,7 @@ endif
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
+WITHOUT_LINEAGE_SEPOLICY := true
 
 # Wi-Fi
 BOARD_HAS_QCOM_WLAN := true
