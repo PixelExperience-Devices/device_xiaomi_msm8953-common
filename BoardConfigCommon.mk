@@ -192,7 +192,7 @@ endif
 
 # SELinux
 #include device/qcom/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
+#BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
 WITHOUT_LINEAGE_SEPOLICY := true
 SELINUX_IGNORE_NEVERALLOWS := true
 
