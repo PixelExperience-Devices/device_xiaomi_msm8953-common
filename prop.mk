@@ -35,6 +35,7 @@ vendor.voice.voip.conc.disabled=true
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
+persist.bluetooth.bluetooth_audio_hal.disabled=true \
 bluetooth.hfp.client=1 \
 qcom.bluetooth.soc=smd \
 ro.bluetooth.hfp.ver=1.7 \
