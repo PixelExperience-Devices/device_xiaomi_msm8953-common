@@ -484,4 +484,6 @@
     <integer name="config_proximityCheckTimeout">100</integer>
     <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool>
 
+    <!-- Smart charging -->
+    <bool name="config_smartChargingAvailable">false</bool>
 </resources>
