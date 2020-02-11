@@ -451,7 +451,7 @@
     <bool name="config_ignoreRssnrSignalLevel">true</bool>
 
     <!-- Smart charging -->
-    <bool name="config_smartChargingAvailable">false</bool>
+    <bool name="config_smartChargingAvailable">true</bool>
 
     <!-- Whether to use in-built Screen Record service -->
     <bool name="config_showScreenRecord">true</bool>
@@ -486,4 +486,7 @@
 
     <!-- Telephony qualified networks service package name to bind to by default. -->
     <string name="config_qualified_networks_service_package">vendor.qti.iwlan</string>
+
+    <!-- We dont not have a multicolored LED -->
+    <bool name="config_multiColorBatteryLed">false</bool>
 </resources>
