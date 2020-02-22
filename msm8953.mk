@@ -351,7 +351,8 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
-    vndk-sp
+    vndk-sp \
+    vndk-ext
 
 # Thermal
 PRODUCT_PACKAGES += \
