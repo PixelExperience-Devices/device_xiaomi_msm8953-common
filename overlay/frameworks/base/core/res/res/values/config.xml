@@ -319,6 +319,16 @@
     <!-- Flag indicating if the speed up audio on mt call code should be executed -->
     <bool name="config_speed_up_audio_on_mt_calls">true</bool>
 
+    <!-- ComponentName of a dream to show whenever the system would otherwise have
+         gone to sleep.  When the PowerManager is asked to go to sleep, it will instead
+         try to start this dream if possible.  The dream should typically call startDozing()
+         to put the display into a low power state and allow the application processor
+         to be suspended.  When the dream ends, the system will go to sleep as usual.
+         Specify the component name or an empty string if none.
+         Note that doze dreams are not subject to the same start conditions as ordinary dreams.
+         Doze dreams will run whenever the power manager is in a dozing state. -->
+    <string name="config_dozeComponent" translatable="false">com.android.systemui/com.android.systemui.doze.DozeService</string>
+
     <!-- Power Management: Specifies whether to decouple the interactive state of the
          device from the display on/off state.
          When false, setInteractive(..., true) will be called before the display is turned on
@@ -342,7 +352,6 @@
     <!-- If true, the doze component is not started until after the screen has been
          turned off and the screen off animation has been performed. -->
     <bool name="config_dozeAfterScreenOffByDefault">true</bool>
-
     <!-- Configure mobile tcp buffer sizes in the form:
          rat-name:rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max
          If no value is found for the rat-name in use, the system default will be applied.
@@ -413,9 +422,6 @@
 
     <!-- Flag indicating whether we should enable smart battery. -->
     <bool name="config_smart_battery_available">true</bool>
-
-    <!-- Whether the display blanks itself when transition from a doze to a non-doze state -->
-    <bool name="config_displayBlanksAfterDoze">false</bool>
 
     <!-- Whether WiFi display is supported by this device.
          There are many prerequisites for this feature to work correctly.
