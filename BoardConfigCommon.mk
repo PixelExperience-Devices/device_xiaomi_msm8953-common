@@ -224,6 +224,3 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Telephony
 TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT := true
-
-# Inherit from the proprietary version
--include vendor/xiaomi/msm8953-common/BoardConfigVendor.mk
