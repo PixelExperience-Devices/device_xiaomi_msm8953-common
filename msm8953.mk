@@ -68,10 +68,6 @@ PRODUCT_PACKAGES += \
     com.dsi.ant.antradio_library \
     libantradio
 
-# Device-specific Settings
-PRODUCT_PACKAGES += \
-    XiaomiDoze
-
 # Dex
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
