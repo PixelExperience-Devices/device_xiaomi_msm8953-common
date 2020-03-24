@@ -70,7 +70,7 @@ PRODUCT_PACKAGES += \
 
 # Device-specific Settings
 PRODUCT_PACKAGES += \
-    XiaomiParts
+    XiaomiDoze
 
 # Dex
 PRODUCT_DEXPREOPT_SPEED_APPS += \
