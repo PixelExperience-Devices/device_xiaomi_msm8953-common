@@ -259,7 +259,31 @@ ro.hwui.texture_cache_flushrate=0.4 \
 ro.hwui.text_small_cache_width=1024 \
 ro.hwui.text_small_cache_height=1024 \
 ro.hwui.text_large_cache_width=2048 \
-ro.hwui.text_large_cache_height=1024
+ro.hwui.text_large_cache_height=1024 \
+ro.cutoff_voltage_mv=3400 \
+ro.memperf.lib=libmemperf.so \
+ro.memperf.enable=false \
+persist.mm.sta.enable=0
+
+# Improve touch detection
+PRODUCT_PROPERTY_OVERRIDES += \
+touch.pressure.scale=0.001 \
+persist.sys.ui.hw=1 \
+view.scroll_friction=10 \
+touch.size.calibration=diameter \
+touch.size.scale=1 \
+touch.size.bias=0 \
+touch.size.isSummed=0 \
+touch.pressure.scale=0.001 \
+touch.orientation.calibration=none \
+touch.distance.calibration=none \
+touch.distance.scale=0 \
+touch.coverage.calibration=box \
+touch.gestureMode=spots \
+MultitouchSettleInterval=1ms \
+MultitouchMinDistance=1px \
+TapInterval=1ms \
+TapSlop=1px
 
 # Lau's magic props
 PRODUCT_PROPERTY_OVERRIDES += \
