@@ -121,16 +121,18 @@ debug.sf.early_gl_phase_offset_ns=3000000 \
 debug.sf.early_gl_app_phase_offset_ns=15000000
 
 # SurfaceFlinger
-ro.surface_flinger.protected_contents=true
-ro.surface_flinger.use_smart_90_for_video=true
-ro.surface_flinger.set_display_power_timer_ms=10000
-ro.surface_flinger.set_touch_timer_ms=5000
-ro.surface_flinger.set_idle_timer_ms=9000
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.surface_flinger.protected_contents=true \
+ro.surface_flinger.use_smart_90_for_video=true \
+ro.surface_flinger.set_display_power_timer_ms=10000 \
+ro.surface_flinger.set_touch_timer_ms=5000 \
+ro.surface_flinger.set_idle_timer_ms=9000 \
 
 # Graphics
-debug.sf.early_phase_offset_ns=1500000
-debug.sf.early_app_phase_offset_ns=1500000
-debug.sf.early_gl_phase_offset_ns=3000000
+PRODUCT_PROPERTY_OVERRIDES += \
+debug.sf.early_phase_offset_ns=1500000 \
+debug.sf.early_app_phase_offset_ns=1500000 \
+debug.sf.early_gl_phase_offset_ns=3000000 \
 debug.sf.early_gl_app_phase_offset_ns=15000000
 
 # DRM
@@ -171,7 +173,8 @@ vendor.vidc.dec.downscalar_width=1920 \
 vendor.vidc.disable.split.mode=1 \
 vendor.vidc.enc.disable.pq=true \
 vendor.vidc.enc.disable_bframes=1 \
-vendor.video.disable.ubwc=1
+vendor.video.disable.ubwc=1 \
+vidc.enc.disable_pframes=1 \
 vendor.display.enable_default_color_mode=1 \
 vendor.gralloc.enable_fb_ubwc=1 \
 vendor.video.disable.ubwc=1
@@ -273,10 +276,6 @@ ro.hwui.text_small_cache_width=1024 \
 ro.hwui.text_small_cache_height=1024 \
 ro.hwui.text_large_cache_width=2048 \
 ro.hwui.text_large_cache_height=1024 \
-ro.cutoff_voltage_mv=3400 \
-ro.memperf.lib=libmemperf.so \
-ro.memperf.enable=false \
-persist.mm.sta.enable=0
 
 # Improve touch detection
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -320,5 +319,13 @@ ro.vendor.qti.sys.fw.use_trim_settings=true \
 ro.vendor.qti.sys.fw.empty_app_percent=50 \
 ro.vendor.qti.sys.fw.trim_empty_percent=100 \
 ro.vendor.qti.sys.fw.trim_cache_percent=100 \
-iro.vendor.qti.sys.fw.trim_enable_memory=2147483648
+iro.vendor.qti.sys.fw.trim_enable_memory=2147483648 \
+ro.vendor.qti.config.zram=true \
+ro.vendor.qti.am.reschedule_service=true \
+ro.cutoff_voltage_mv=3400 \
+ro.memperf.lib=libmemperf.so \
+ro.memperf.enable=false \
+persist.mm.sta.enable=0 \
+persist.fuse_sdcard=true \
+persist.console.silent.config=1
 
