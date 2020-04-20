@@ -327,13 +327,23 @@ vendor/bin/ipacm-diag
 vendor/lib/hw/keystore.msm8953.so|9be4c88926ebed98b2b23725f8118ff9d0bbb2d6
 vendor/lib64/hw/keystore.msm8953.so|9f4d991dfa359299739bd443b63731528d9cb5d0
 
-# Listen
-vendor/lib64/hw/sound_trigger.primary.msm8953.so
-vendor/lib64/vendor.qti.voiceprint@1.0.so
-vendor/lib/hw/sound_trigger.primary.msm8953.so
-vendor/lib/libadpcmdec.so
-vendor/lib/libsmwrapper.so
-vendor/lib/vendor.qti.voiceprint@1.0.so
+# Listen - from LA.UM.8.6.2.r1-06600-89xx.0
+vendor/lib/hw/sound_trigger.primary.msm8953.so|d3b9a3e539f08c8fefd10d32597f307fc1252df7
+vendor/lib/libadpcmdec.so|0b00273d1321f4fde109b1f8be514ab0ac6bedf1
+vendor/lib/libgcs-calwrapper.so|52ec9fb58b1e7bba2f07ad537498dc4459149200
+vendor/lib/libgcs-ipc.so|112abd39d66a3dece97c919531d66d5200669b63
+vendor/lib/libgcs-osal.so|90ab9fece8f522f6fe5f0f9d3551614e1d19c15b
+vendor/lib/libgcs.so|40938a228dadd027a6e748e7129a885616d5e21a
+vendor/lib/liblistenjni.so|d02fe8dad3bbcbe03454ea1025e6d88054b16a7f
+vendor/lib/liblistensoundmodel2.so|09ec29fb01b37063660327d3d5933cc94f27a18a
+vendor/lib/libsmwrapper.so|5b3e34fd89883a2c308f377988da031c519a7b38
+vendor/lib64/hw/sound_trigger.primary.msm8953.so|4af21ccf55a0db519e115e54af843d539d8a72bc
+vendor/lib64/libgcs-calwrapper.so|d4e8bc6b35fca00490acfbcbc5d25ff9f828c556
+vendor/lib64/libgcs-ipc.so|dab6a668c6b424720f72c1e078a9e848f156864d
+vendor/lib64/libgcs-osal.so|a1c5c73662cfaeaf462fe8f30fac6abe991e0f2a
+vendor/lib64/libgcs.so|ddf8c62007d12b9350032b02c6c98f761d01ddb7
+vendor/lib64/liblistenjni.so|124eb4884ad221101543fcad305cb3ab1f56dd58
+vendor/lib64/liblistensoundmodel2.so|7fe107e1e815a66d6361ba2a43643e6d2b1cc54c
 
 # Media - from LA.UM.8.6.2.r1-06600-89xx.0
 vendor/lib/libI420colorconvert.so|4feec5034de3e21d95602ca93c559550c682e19b
@@ -621,6 +631,10 @@ vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|d4d025e0a12af87f65104
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|1a3bd8be98867f7af79edd76a25ec00865fd8915
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|1ac676dca4c81094b254b62f1b608e471b385847
+
+# Voice - from LA.UM.8.6.2.r1-06600-89xx.0
+vendor/lib/vendor.qti.voiceprint@1.0.so|2f9141a46d99737c6812ea921e4497ff954d726c
+vendor/lib64/vendor.qti.voiceprint@1.0.so|ab99a512c95b55c887b624b21fbc947bc6a6c999
 
 # Widevine - from LA.UM.8.6.2.r1-06600-89xx.0
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine|b626d9bbf7043c66c8ef903c9d0e5183fc47388d
