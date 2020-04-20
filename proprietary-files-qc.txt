@@ -21,29 +21,45 @@ vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so
 vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
 
-# Audio
-vendor/lib/libacdb-fts.so
-vendor/lib/libacdbloader.so
-vendor/lib/libacdbrtac.so
-vendor/lib/libadiertac.so
-vendor/lib/libadm.so
-vendor/lib/libaudcal.so
-vendor/lib/libaudioalsa.so
-vendor/lib/libdrc.so
-vendor/lib/libqtigef.so
-vendor/lib/libsurround_3mic_proc.so
-vendor/lib/soundfx/libqcbassboost.so
-vendor/lib/soundfx/libqcreverb.so
-vendor/lib/soundfx/libqcvirt.so
-vendor/lib64/libacdb-fts.so
-vendor/lib64/libacdbloader.so
-vendor/lib64/libacdbrtac.so
-vendor/lib64/libadiertac.so
-vendor/lib64/libaudcal.so
-vendor/lib64/libaudioalsa.so
-vendor/lib64/libqtigef.so
-vendor/lib64/soundfx/libqcbassboost.so
-vendor/lib64/soundfx/libqcvirt.so
+# Audio - from LA.UM.8.6.2.r1-06600-89xx.0
+etc/permissions/audiosphere.xml|3c6d8f14bd99e52a424282fd5d0a5b9b06485dea
+framework/audiosphere.jar|c1679f5aca56f0cb24745b3f7d219acd04833bed
+vendor/bin/audioflacapp|61fc5894d09647bef76dc144ad3d93f4ec35ab93
+vendor/lib/libacdb-fts.so|1f25781775183447ccee4933cda27dc979216098
+vendor/lib/libacdbloader.so|0475014588725b3f83d8cd3e2c93297ffbeb690b
+vendor/lib/libacdbrtac.so|18f7f0a6d881f45fb2c750510e6397e170aec78e
+vendor/lib/libadiertac.so|8407c8050bb3910444a6ec98c1c7b9f0a61dc9d4
+vendor/lib/libadm.so|9fce53fde690b71022e1955fb2a4fcba92bbdd27
+vendor/lib/libaudcal.so|8ab3a31ff2b675b1b948c916e5a24c8660b8d4ec
+vendor/lib/libaudioalsa.so|35cce51f69cb583dfa6c3e0d5da28d294b056ec0
+vendor/lib/libaudioconfigstore.so|ab9478d6bffce2d10d3b6c088731ecbf74b0f89c
+vendor/lib/libaudioparsers.so|1ce1e271957dee3c70e64fd1797d0d7d4821047d
+vendor/lib/libaudio_log_utils.so|3f585b965eaca3a10caa6d569aa43a38b15fa3d3
+vendor/lib/libdrc.so|7ec4724b14da8c7720faaf3b2cc676037f6f360c
+vendor/lib/libqtigef.so|f8aa1da28b7759ccd921c59074085df57318050d
+vendor/lib/libsurround_3mic_proc.so|5b5fba472c80616674cfd0974a78963a679de78c
+vendor/lib/soundfx/libasphere.so|79433e8819cc43c1b48f192aebc4e9a6fd58e011
+vendor/lib/soundfx/libqcbassboost.so|340538a1f380e9450ab9a2399715ac9f9dfa3057
+vendor/lib/soundfx/libqcreverb.so|bdafd36066d534e5d70e15ab788ffed86839ae98
+vendor/lib/soundfx/libqcvirt.so|907cc117a884defa6156f7c43de3dc9a8b0ca5e2
+vendor/lib64/libacdb-fts.so|ef103a2d857204f3477fc643644c07e2c1f8eb11
+vendor/lib64/libacdbloader.so|447dc9eafa0d840efaee05139318dea2da9e6e7b
+vendor/lib64/libacdbrtac.so|0dcadc05005216a3b1f16ad00054eb294c5f3650
+vendor/lib64/libadiertac.so|0c4c643cb7071251faec47006e2daace93af3117
+vendor/lib64/libaudcal.so|41a39ae956b77a24e454dd1ecf7325d049a38f42
+vendor/lib64/libaudioalsa.so|bdf49c709df8a1a7a7e232a6cb1ba6d15af594c7
+vendor/lib64/libaudioconfigstore.so|1f16986972b3ac3ac74eb0bc2cb676bc839fd8a4
+vendor/lib64/libaudioparsers.so|ad9394501d467fd264675ead74a4e6bab34eadd5
+vendor/lib64/libaudio_log_utils.so|371eac73a036177105c2a1f59272b39e69244d0d
+vendor/lib64/libqtigef.so|85bc35fac24a1a2b38f7999d94d2f16e5a93614a
+vendor/lib64/soundfx/libasphere.so|27154ce2eed6902f36ed8c85324cf61c96c8af02
+vendor/lib64/soundfx/libqcbassboost.so|c25c79be43ce91911d39b746a004857492a08f61
+vendor/lib64/soundfx/libqcreverb.so|315a582ce7954eca24b709ba176695ccae6a568e
+vendor/lib64/soundfx/libqcvirt.so|6414e5c0b2b9442c1458d06098af406f5671b1d0
+
+# Audio-Hardware - from LA.UM.8.6.2.r1-06600-89xx.0
+vendor/lib/libtinycompress_vendor.so|6915dd6681263ac674a578078f61311d2f938b25
+vendor/lib64/libtinycompress_vendor.so|41950751bc43c4bdff3d172a6d6f48857499fe3b
 
 # Audio dirac - from xiaomi
 lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953
