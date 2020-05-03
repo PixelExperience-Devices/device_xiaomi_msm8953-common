@@ -19,6 +19,9 @@
 # Location
 /data/vendor/location/xtra/socket_hal_xtra    u:object_r:location_socket:s0
 
+# Power HAL
+/sys/devices(/platform)?/soc/78b7000\.i2c/i2c-3/3-0020/input/input[0-9]+/wake_gesture     u:object_r:sysfs_tap_to_wake:s0
+
 # Rild
 /(vendor|system/vendor)/radio/qcril_database/qcril.db			u:object_r:rild_file:s0
 
@@ -28,5 +31,5 @@
 /sys/devices(/platform)?/soc/78b7000\.i2c/i2c-3/3-[0-9a-f]+/enable_dt2w		u:object_r:proc_touchpanel:s0
 /sys/devices(/platform)?/soc/78b7000\.i2c/i2c-3/3-[0-9a-f]+/disable_keys         u:object_r:proc_touchpanel:s0
 
-# USB
-/(vendor|system/vendor)/bin/hw/android\.hardware\.usb@1\.0-service\.xiaomi_8996       u:object_r:hal_usb_default_exec:s0
+# Usb
+/(vendor|system/vendor)/bin/hw/android\.hardware\.usb@1\.0-service\.vince       u:object_r:hal_usb_default_exec:s0
