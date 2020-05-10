@@ -59,6 +59,8 @@ ro.qualcomm.bt.hci_transport=smd
 PRODUCT_PROPERTY_OVERRIDES += \
 camera.display.lmax=1280x720 \
 camera.display.umax=1920x1080 \
+persist.vendor.camera.display.umax=1920x1080 \
+persist.vendor.camera.display.lmax=1280x720 \
 vendor.camera.aux.packagelist=org.lineageos.snap,com.google.android.GoogleCamera \
 vendor.camera.hal1.packagelist=com.whatsapp,com.facebook.katana,com.instagram.android,com.snapchat.android \
 camera.lowpower.record.enable=1 \
@@ -176,7 +178,6 @@ vendor.vidc.enc.disable.pq=true \
 vendor.vidc.enc.disable_bframes=1 \
 vendor.video.disable.ubwc=1 \
 vidc.enc.disable_pframes=1 \
-vendor.display.enable_default_color_mode=1 \
 vendor.gralloc.enable_fb_ubwc=1 \
 vendor.video.disable.ubwc=1
 
@@ -203,10 +204,6 @@ persist.rild.nitz_short_ons_1="" \
 persist.rild.nitz_short_ons_2="" \
 persist.rild.nitz_short_ons_3=""
 
-# Property to enable display default color mode
-PRODUCT_PROPERTY_OVERRIDES += \
-vendor.display.enable_default_color_mode=1
-
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
 DEVICE_PROVISIONED=1 \
@@ -216,7 +213,7 @@ persist.data.iwlan=1 \
 persist.data.iwlan.ipsec.ap=1 \
 persist.dbg.wfc_avail_ovr=1 \
 persist.vendor.radio.apm_sim_not_pwdn=1 \
-persist.radio.aosp_usr_pref_sel=true \
+persist.vendor.radio.aosp_usr_pref_sel=true \
 persist.radio.multisim.config=dsds \
 persist.vendor.radio.custom_ecc=1 \
 persist.vendor.radio.jbims=1 \
@@ -303,7 +300,6 @@ TapSlop=1px
 PRODUCT_PROPERTY_OVERRIDES += \
 debug.sf.hw=1 \
 debug.hwui.renderer=skiagl \
-debug.cpurend.vsync=false \
 vendor.display.enable_default_color_mode=0 \
 debug.composition.type=c2d  \
 debug.mdpcomp.idletime=600  \
@@ -328,6 +324,5 @@ ro.cutoff_voltage_mv=3400 \
 ro.memperf.lib=libmemperf.so \
 ro.memperf.enable=false \
 persist.mm.sta.enable=0 \
-persist.fuse_sdcard=true \
-persist.console.silent.config=1
+persist.fuse_sdcard=true
 
