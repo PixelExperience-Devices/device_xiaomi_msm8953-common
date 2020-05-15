@@ -289,7 +289,8 @@ PRODUCT_PACKAGES += \
     init.qcom.bt.sh \
     init.qcom.post_boot.sh \
     move_time_data.sh \
-    move_wifi_data.sh
+    move_wifi_data.sh \
+    loggy.sh
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
@@ -347,7 +348,8 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
-    vndk-sp
+    vndk-sp \
+    vndk-ext
 
 # Thermal
 PRODUCT_PACKAGES += \

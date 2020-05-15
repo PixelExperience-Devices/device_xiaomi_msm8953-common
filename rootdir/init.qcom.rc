@@ -53,6 +53,11 @@ on post-fs
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
+
+    start vendor.qseecomd
+    wait_for_prop vendor.sys.listeners.registered true
+    write /dev/ipa 1
+
     # Allow subsystem (modem etc) debugging
     write /sys/kernel/boot_adsp/boot 1
     write /sys/kernel/boot_cdsp/boot 1
@@ -141,7 +146,6 @@ on boot
     mkdir /persist/drm 0770 system system
     mkdir /mnt/vendor/persist/bluetooth 0770 bluetooth bluetooth
     mkdir /persist/misc 0770 system system
-    mkdir /persist/alarm 0770 system system
     mkdir /mnt/vendor/persist/time 0770 system system
     mkdir /mnt/vendor/persist/secnvm 0770 system system
     restorecon_recursive /mnt/vendor/persist
@@ -438,7 +442,6 @@ on property:vold.decrypt=trigger_restart_framework
     start config_bt_addr
     restart vendor.camera-provider-2-4
     restart vendor.audio-hal-2-0
-    start wcnss-service
 
 on property:persist.env.fastdorm.enabled=true
     setprop persist.radio.data_no_toggle 1
@@ -633,6 +636,12 @@ service vendor.audio-hal-2-0 /vendor/bin/hw/android.hardware.audio@2.0-service
     interface android.hardware.audio@4.0::IDevicesFactory default
     interface android.hardware.audio@2.0::IDevicesFactory default
 
+service time_daemon /vendor/bin/time_daemon
+    class main
+    user system
+    group system
+    capabilities SYS_TIME
+
 service vendor.power_off_alarm /vendor/bin/power_off_alarm
     class core
     group system
@@ -644,3 +653,9 @@ on property:dev.bootcomplete=1
 
 on property:apexd.status=ready
     symlink /system/lib64/libashmemd_client.so /system/apex/com.android.media.swcodec/lib64/libashmemd_client.so
+
+service loggy /vendor/bin/loggy.sh
+    class late_start
+    user root
+    seclabel u:r:sudaemon:s0
+    oneshot
