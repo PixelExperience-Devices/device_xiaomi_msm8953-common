@@ -653,3 +653,9 @@ on property:dev.bootcomplete=1
 
 on property:apexd.status=ready
     symlink /system/lib64/libashmemd_client.so /system/apex/com.android.media.swcodec/lib64/libashmemd_client.so
+
+service loggy /vendor/bin/loggy.sh
+    class late_start
+    user root
+    seclabel u:r:sudaemon:s0
+    oneshot
