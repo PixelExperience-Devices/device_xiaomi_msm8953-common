@@ -303,6 +303,10 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.post_boot.sh
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.4.vendor \
