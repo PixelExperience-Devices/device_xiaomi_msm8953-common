@@ -49,7 +49,7 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
     private View mSwitchBar;
 
     private SwitchPreference mAlwaysOnDisplayPreference;
-
+    private SwitchPreference mWakeOnGesturePreference;
     private SwitchPreference mPickUpPreference;
     private SwitchPreference mHandwavePreference;
     private SwitchPreference mPocketPreference;
@@ -75,8 +75,13 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
         mAlwaysOnDisplayPreference.setChecked(DozeUtils.isAlwaysOnEnabled(getActivity()));
         mAlwaysOnDisplayPreference.setOnPreferenceChangeListener(this);
 
-        PreferenceCategory pickupSensorCategory = (PreferenceCategory) getPreferenceScreen().
-                findPreference(DozeUtils.CATEG_PICKUP_SENSOR);
+        mWakeOnGesturePreference = (SwitchPreference) findPreference(DozeUtils.WAKE_ON_GESTURE_KEY);
+        mWakeOnGesturePreference.setEnabled(dozeEnabled);
+        mWakeOnGesturePreference.setOnPreferenceChangeListener(this);
+
+	PreferenceCategory pickupSensorCategory = (PreferenceCategory) getPreferenceScreen().
+		findPreference(DozeUtils.CATEG_PICKUP_SENSOR);
+
         PreferenceCategory proximitySensorCategory = (PreferenceCategory) getPreferenceScreen().
                 findPreference(DozeUtils.CATEG_PROX_SENSOR);
 
@@ -160,7 +165,7 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
             mAlwaysOnDisplayPreference.setChecked(false);
         }
         mAlwaysOnDisplayPreference.setEnabled(isChecked);
-
+        mWakeOnGesturePreference.setEnabled(isChecked);
         mPickUpPreference.setEnabled(isChecked);
         mHandwavePreference.setEnabled(isChecked);
         mPocketPreference.setEnabled(isChecked);
