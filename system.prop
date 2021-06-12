@@ -33,6 +33,9 @@ persist.hwc.mdpcomp.enable=true
 ro.qualcomm.cabl=2
 sdm.debug.disable_skip_validate=1
 
+# Encryption
+ro.crypto.volume.contents_mode=aes-256-xts
+
 # Fingerprint
 persist.qfp=false
 
