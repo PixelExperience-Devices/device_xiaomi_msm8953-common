@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Apex
+PRODUCT_COMPRESSED_APEX := false
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
