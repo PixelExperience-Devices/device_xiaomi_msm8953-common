@@ -414,8 +414,8 @@ PRODUCT_PACKAGES += \
     libstagefright_enc_common \
     libshim_wfdmmsink
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+#PRODUCT_BOOT_JARS += \
+ #   WfdCommon
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/msm8953-common/msm8953-common-vendor.mk)
