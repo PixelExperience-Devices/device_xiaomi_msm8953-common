@@ -180,6 +180,10 @@ ro.telephony.call_ring.multiple=false \
 ro.telephony.default_network=22,20 \
 service.qti.ims.enabled=1
 
+# System
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.sys.binary_xml=false
+
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.timed.enable=true
