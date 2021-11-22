@@ -566,7 +566,6 @@ vendor/lib64/libdiag.so|06dd481a7563f492713db4f2e3bc45ee581179ec
 
 # Radio - from nokia
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|bbc0c94bb5cff789eac7990abc654948d2bf0395
--system_ext/app/datastatusnotification/datastatusnotification.apk|ac30fe54a1e76366b1e0b1d22dae0d7d4669c6c8
 -system_ext/app/embms/embms.apk|fe9986babadf15e940cd1edbf6439fbf22d9f908
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|c440f39da96a1ea8b486a7f15aa55c84a5e786cb
 system_ext/etc/permissions/embms.xml|22e7474091f9f71f02dd0cfc76cfa8848a46f079
