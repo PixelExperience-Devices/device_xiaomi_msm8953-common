@@ -546,4 +546,9 @@
             2 - Supported with variable brightness control
     -->
     <integer name="config_deviceSupportsButtonBrightnessControl">1</integer>
+
+    <!-- List of comma separated package names for 
+    which we the system will not show crash, ANR,
+         etc. dialogs. --> 
+     <string name="config_appsNotReportingCrashes">com.google.android.tts</string>
 </resources>
