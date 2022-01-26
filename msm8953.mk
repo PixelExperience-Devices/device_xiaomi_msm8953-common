@@ -232,6 +232,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.6 \
     ims-ext-common \
     ims_ext_common.xml \
+    libshim_imsvideocodec \
     vendor.qti.hardware.camera.device@1.0
 
 # HW crypto
