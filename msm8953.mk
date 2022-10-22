@@ -127,7 +127,6 @@ PRODUCT_PACKAGES += \
 	gralloc.msm8953
 
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.1-impl \
     android.hardware.graphics.composer@2.1-service \
     hwcomposer.msm8953
 
@@ -138,9 +137,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libdisplayconfig \
-    liboverlay \
     libqdMetaData.system \
-    libgenlock \
     libtinyxml
 
 # DPM
@@ -171,9 +168,7 @@ PRODUCT_PACKAGES += \
     libwifi-hal-ctrl
 
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.2.vendor \
-    android.hardware.gnss@2.1.vendor \
-    android.hardware.gnss@3.0.vendor
+    android.hardware.gnss@2.1.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
@@ -267,7 +262,6 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxG711Enc \
     libOmxQcelp13Enc \
-    libOmxSwVencHevc \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
@@ -309,7 +303,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.qcom.sh \
-    init.qcom.bt.sh \
     init.qcom.post_boot.sh
 
 # RIL
@@ -319,7 +312,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.secure_element@1.0.vendor \
     librmnetctl \
-    libcnefeatureconfig \
     libxml2
 
 # Sensors
@@ -384,11 +376,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     libcld80211 \
-    libQWiFiSoftApCfg \
     libwifi-hal-ctrl \
     libwpa_client \
     hostapd \
-    dhcpcd.conf \
     wificond \
     WifiOverlay \
     wpa_supplicant \
